@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts1.js"></script>
+</head>
+
+<body>
+    <form action="http://se.shenkar.ac.il/teach/web1/get_form3.php" method="get" onsubmit="return validForm()">
+        <h1>Join Our Member Club</h1><br>
+        Full Name: <input type=”text” class="form-control" name="fullName" placeholder="my name" id="fullName"><br>
+        Enter Password: <input type="password" name="pass" id="pass" placeholder="password" pattern="^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$" title="At least 6 characters, including one uppercase letter and one digit" required><br>
+        Enter Your Email: <input type="email" name="mail" placeholder="email"><br>
+        Website: <input type="url" name="website"><br>
+        Enter Your Cell Number: <input type="tel" name="phone" id="phone" placeholder="phone" pattern="^[0-9]{9,10}$" title="Please enter 9 or 10 digits without a dash" required><br>
+        How many times do you drink coffee a day? <input type="number" name="coffee"><br>
+        Range: <input type="range" name="temper"><br>
+        Address: <textarea name="address"></textarea><br>
+        Golf: <input type="checkbox" name="interests[]" value="Golf"><br>
+        Gym: <input type="checkbox" name="interests[]" value="Gym"><br>
+        Soccer: <input type="checkbox" name="interests[]" value="Soccer"><br>
+        Basketball: <input type="checkbox" name="interests[]" value="Basketball"><br>
+        Cycling: <input type="checkbox" name="interests[]" value="Cycling"><br>
+        Tennis: <input type="checkbox" name="interests[]" value="Tennis"><br>
+        <p>gender: </p>
+        male: </button><input type="radio" name="gender" value="male"><br>
+        femail: </button><input type="radio" name="gender" value="femail"><br>
+        other: </button><input type="radio" name="gender" value="other"><br><br>        
+        age: <select id="age" name="age" value="age" required></select><br>
+            Submit-><input type="submit" value="send"><br>
+
+    </form>
+</body>
+
+</html>
